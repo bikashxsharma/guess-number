@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess number game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---Main continer that contains everything-->
+    <div id="main-container" class="main-container">
+         <!---Top box for title and difficulties level-->
+            <div class="top-box">
+                <div class="title-section">
+                    <h2>I have a random number <br/> betwee 1-100</h2>
+                    <h4>Dare to guess?</h4>
+                </div>
+                <div class="difficulty-level">
+                    <p>Select difficulty setting:</p>
+                    <button class="primary-btn" id="easy-level">
+                        Easy: guess in 10 attempts(default)
+                    </button>
+                    <button class="primary-btn" id="hard-level">
+                            Hard: Guess in 5 attempts
+                        </button>
+                </div>
+            </div>
+                    <!---user input section to guess the number-->
+            <div class="user-input">
+                <h3 id="show-result">Enter your guess below & press enter</h3>
+                <input type="number" name="user-guess" id="user-guess">
+                <p>Previous attempt : <span id="attemp-left"></span></p>
+
+            </div>
+         <!---Previous guesses box-->
+         <div class="previous-guess">
+             <p>Your previous guesses:</p>
+             <p id="guess-log"></p>
+         </div>
+
+
+
+    </div>
+
+    
+    <script src="guess.js"></script>
+</body>
+</html>
