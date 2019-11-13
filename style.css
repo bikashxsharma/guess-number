@@ -98,3 +98,8 @@ button:hover{
     padding: 1rem 0rem 1rem 0rem;
 
 }
+
+.displayNone{
+
+    display: :none;
+}
